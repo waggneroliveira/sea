@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="Back-end developer experienced in Laravel, Vue, and APIs. Proficient in web development, database modeling, and SEO, focused on performance and scalability." name="description">
+    <meta content="desenvolvedor web, back-end Laravel, front-end JavaScript, full stack, PHP, Laravel, Vue.js, React, Tailwind CSS, Bootstrap, Sass, API REST, MySQL, desenvolvimento web, programação" name="keywords">
+  
+    <title>S&A</title>
+    
+    <link rel="canonical" href="https://www.wagnerwebdev.com.br/">
+
+    <!-- Favicons -->
+    <link href="assets/images/logo.png" rel="icon">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- Open Graph and Twitter Card data -->
+    <meta property="og:title" content="WHI - Web de Alta Inspiração">
+    <meta property="og:description" content="Especialistas em fisioterapia e medicina esportiva em Salvador. Diagnóstico preciso, atendimento próximo e foco total na sua autonomia e qualidade de vida.">
+    <meta property="og:image" content="https://www.wagnerwebdev.com.br/assets/images/logo.png">
+    <meta property="og:url" content="https://www.wagnerwebdev.com.br/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="WHI - Web de Alta Inspiração">
+    <meta name="twitter:description" content="Especialistas em fisioterapia e medicina esportiva em Salvador.">
+    <meta name="twitter:image" content="https://www.wagnerwebdev.com.br/assets/images/logo.png">
+    <meta name="geo.region" content="BR-BA">
+    <meta name="geo.placename" content="Salvador">
+    <meta name="geo.position" content="-12.9718;-38.5011">
+    <meta name="ICBM" content="-12.9718, -38.5011">
+</head>
+<body>
+    <header id="header" class="fixed-top"> 
+        <div class="container-fluid p-2 pe-lg-0">
+            <div class="container-header m-auto me-0 d-flex align-items-center justify-content-between p-2 pe-lg-0">
+                <div class="logo-img px-3 py-2 rounded-2 d-flex justify-content-center align-items-center">
+                    <img src="assets/images/logo-footer.svg" alt="S&A" title="S&A" class="img-fluid">
+                </div>
+
+                <nav class="navbar navbar-expand-lg navbar-light gap-5">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarMenu">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
+                            <li class="nav-item">
+                                <a class="nav-link inter font-regular font-18 text-white active" href="#hero">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link inter font-regular font-18 text-white" href="#about">Quem somos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link inter font-regular font-18 text-white" href="#diferenciais">Diferenciais</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link inter font-regular font-18 text-white" href="#service">Serviços</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link inter font-regular font-18 text-white" href="#contact">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="btn-orcamento m-0 ms-lg-4">
+                        <a href="#" target="_blank" class="btn-orcamento-link font-regular font-18 text-white bg-primary py-2 px-4">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_59_535)">
+                            <path d="M14.3981 3.56735H2.8291V4.38878H14.3981V3.56735Z" fill="white"/>
+                            <path d="M14.3981 5.8204H2.8291V6.64183H14.3981V5.8204Z" fill="white"/>
+                            <path d="M8.6021 8.12042H2.8291V8.94185H8.6021V8.12042Z" fill="white"/>
+                            <path d="M7.0151 10.3969H2.8291V11.2184H7.0151V10.3969Z" fill="white"/>
+                            <path d="M16.6979 7.86225V0.469391H0.505859V23C0.505859 23 14.8119 23 14.9729 23C19.1129 23 22.4939 19.55 22.4939 15.3255C22.4939 11.7112 20.0099 8.66021 16.6979 7.86225ZM1.31086 22.1786V1.29082H15.8929V7.72143C15.5939 7.67449 15.2719 7.65102 14.9729 7.65102C10.8329 7.65102 7.45186 11.101 7.45186 15.3255C7.45186 18.3061 9.13086 20.8878 11.5689 22.1551L1.31086 22.1786ZM14.9729 22.1786C11.2699 22.1786 8.25686 19.1041 8.25686 15.3255C8.25686 11.5469 11.2699 8.47245 14.9729 8.47245C18.6759 8.47245 21.6889 11.5469 21.6889 15.3255C21.6889 19.1041 18.6759 22.1786 14.9729 22.1786Z" fill="white"/>
+                            <path d="M19.1588 15.2082C19.2278 15.1378 19.2508 15.0439 19.2278 14.9265L18.9978 12.6735C18.9748 12.4622 18.7908 12.3214 18.6068 12.3449L16.3068 12.6031C16.2148 12.6031 16.1228 12.6735 16.0538 12.7439C15.9848 12.8143 15.9618 12.9082 15.9848 13.0255C15.9848 13.1194 16.0538 13.2133 16.1228 13.2837C16.1918 13.3541 16.2838 13.3775 16.3988 13.3541L17.9168 13.1898L17.8708 13.2367L15.2488 16.4755L15.2258 16.452L13.5238 14.7388C13.4548 14.6684 13.3628 14.6214 13.2708 14.6214H13.2478C13.1558 14.6214 13.0638 14.6684 12.9948 14.7388L10.3498 17.8133C10.2808 17.8837 10.2578 17.9775 10.2578 18.0714C10.2578 18.1653 10.3038 18.2592 10.3728 18.3296C10.4418 18.4 10.5338 18.4235 10.6258 18.4235C10.7178 18.4235 10.8098 18.3765 10.8788 18.3061L13.2478 15.5367L13.2708 15.5602L14.9958 17.2735C15.0648 17.3439 15.1568 17.3908 15.2718 17.3908C15.3638 17.3908 15.4788 17.3439 15.5248 17.25L18.3538 13.7531L18.4918 14.9969C18.5148 15.2082 18.6988 15.349 18.9058 15.3255C18.9978 15.349 19.0898 15.2786 19.1588 15.2082Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_59_535">
+                            <rect width="23" height="23" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+
+                            Solicitar orçamento
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>       
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero position-relative d-flex flex-column section dark-background overflow-hidden">
+            <img id="profileImage" src="assets/images/hero.png" alt="Banner Hero" title="Banner Hero" class="image-hero">
+            <div class="w-100 d-flex justify-content-center flex-column align-items-center position-absolute description h-100">
+                <div class="max-width container text-center z-1">
+                    <h1 class="text-white mb-4 inter font-regular font-40">Nós cuidamos de tudo para você, nossa prioridade!</h1>
+                    <p class="text-white font-light font-18 mb-5">Oferecemos uma administração completa para condomínios residenciais e comerciais, unindo organização, <br> tecnologia e transparência. Conheça a seguir os nossos serviços.</p>
+                </div>                
+            </div>
+
+            <div class="arrow-animate d-flex justify-content-center align-items-center flex-column w-100">
+                <p class="inter font-light font-15 text-white mb-0">Navegue e conheça</p>
+                <div class="scroll-down-arrow">
+                    <a href="#diferenciais" class="arrow-link" aria-label="Rolar para baixo">
+                        <span class="arrow-down"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="diferenciais" class="diferenciais bg-grey">
+            <div class="container">
+                <div class="row py-4 m-auto">
+                    <!-- Item 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="dif-item d-flex justify-content-between align-items-start">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M45.48 17.82C44.46 14.1 42.6 10.5 40.14 7.44C35.76 1.98 30 0 24 0C18 0 12.24 1.98 7.86 7.44C5.4 10.5 3.54 14.1 2.52 17.82C1.08 18.12 0 19.38 0 20.88V30.3C0 32.04 1.38 33.42 3.12 33.42C4.86 33.42 6.24 32.04 6.24 30.3V29.22C8.22 38.28 15.42 48 24 48C31.68 48 38.28 40.2 40.98 31.98C41.28 31.14 41.52 30.3 41.76 29.4V30.24C41.76 31.98 43.14 33.36 44.88 33.36C46.62 33.36 48 31.98 48 30.24V20.88C48 19.32 46.92 18.06 45.48 17.82ZM39.48 31.5C37.56 36.36 32.94 39.9 27.54 40.32C27.24 39.54 26.46 38.94 25.56 38.94H22.44C21.3 38.94 20.34 39.84 20.34 41.04C20.34 42.24 21.3 43.14 22.44 43.14H25.56C26.4 43.14 27.12 42.66 27.48 41.94C30.66 41.7 33.6 40.56 35.94 38.76C35.82 38.88 35.76 39.06 35.64 39.18C34.02 41.4 32.16 43.26 30.24 44.46C28.2 45.78 26.1 46.44 24 46.44C21.9 46.44 19.8 45.78 17.76 44.46C15.84 43.2 13.98 41.4 12.36 39.18C9.24 34.86 7.32 29.22 7.32 24.6C7.32 24.48 7.32 24.36 7.32 24.3C10.14 22.86 12.78 20.46 14.82 17.22C14.88 17.1 14.94 16.98 15 16.92C15.48 16.14 16.5 16.02 17.16 16.62C19.26 18.6 21.96 20.4 25.08 21.78H25.14C27.72 22.92 30.72 22.68 33.18 21.3C33.9 20.88 34.8 20.64 35.7 20.64C37.74 20.64 40.5 23.4 40.56 23.4C40.56 23.82 40.62 24.18 40.62 24.6C40.68 26.7 40.26 29.1 39.48 31.5ZM41.82 20.28C39.96 11.76 32.7 4.2 24 4.2C15.3 4.2 8.1 11.76 6.24 20.28C6.06 19.32 5.46 18.54 4.62 18.12C5.58 14.76 7.26 11.52 9.48 8.76C13.5 3.78 18.66 2.1 24 2.1C29.34 2.1 34.5 3.78 38.52 8.76C40.74 11.52 42.42 14.76 43.38 18.12C42.6 18.54 42 19.32 41.82 20.28Z" fill="#0F245F"/>
+                            </svg>
+
+                            <div class="description col-10">
+                                <h4 class="font-18 font-medium inter color-primary">Atendimento Humanizado</h4>
+                                <p class="font-light font-15 inter">Valorizamos o relacionamento próximo e transparente com síndicos e condôminos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="dif-item d-flex justify-content-between align-items-start">
+                            <svg width="42" height="48" viewBox="0 0 42 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4125 45.2964V46.096H34.5298V45.2964H26.4125ZM28.9207 47.2756V48H32.0237V47.2756H28.9207ZM32.8357 32.6038C32.7051 32.6038 32.5865 32.6572 32.5001 32.7423C32.4137 32.8274 32.3594 32.9442 32.3594 33.0728C32.3594 33.2015 32.4137 33.3182 32.5001 33.4034C32.5865 33.4885 32.7051 33.5419 32.8357 33.5419C32.9663 33.5419 33.0849 33.4885 33.1713 33.4034C33.2578 33.3182 33.312 33.2015 33.312 33.0728C33.312 32.9442 33.2578 32.8274 33.1713 32.7423C33.0849 32.6572 32.9663 32.6038 32.8357 32.6038ZM27.8796 31.9051C27.5762 32.204 27.3872 32.6136 27.3872 33.0728C27.3872 33.532 27.5762 33.9417 27.8796 34.2406C28.0424 34.4009 28.2434 34.5335 28.4645 34.6146V42.268H24.5876L23.3898 41.0884C21.4403 39.1686 20.4656 36.6411 20.4656 34.1115C20.4656 31.584 21.4403 29.0546 23.3838 27.1345C25.3273 25.2145 27.8997 24.2607 30.4684 24.2607C33.0349 24.2607 35.6034 25.2206 37.5531 27.1345C39.5026 29.0544 40.4713 31.5818 40.4713 34.1115C40.4713 36.6389 39.4966 39.1684 37.5471 41.0884L36.3493 42.268H33.4251V34.6146C33.6461 34.5295 33.8471 34.4009 34.0099 34.2406C34.3134 33.9417 34.5023 33.532 34.5023 33.0728C34.5023 32.6136 34.3134 32.204 34.0099 31.9051C33.7064 31.6062 33.2904 31.4202 32.8241 31.4202C32.3578 31.4202 31.9419 31.6062 31.6384 31.9051C31.3349 32.204 31.146 32.6136 31.146 33.0728C31.146 33.532 31.3349 33.9417 31.6384 34.2406C31.8012 34.4009 32.0021 34.5335 32.2232 34.6146V42.268H29.6507V34.6146C29.8718 34.5295 30.0727 34.4009 30.2355 34.2406C30.539 33.9417 30.7279 33.532 30.7279 33.0728C30.7279 32.6136 30.539 32.204 30.2355 31.9051C29.9321 31.6062 29.5161 31.4202 29.0498 31.4202C28.5835 31.4202 28.1675 31.6062 27.864 31.9051H27.8796ZM29.0654 32.6038C28.9348 32.6038 28.8162 32.6572 28.7298 32.7423C28.6434 32.8274 28.5891 32.9442 28.5891 33.0728C28.5891 33.2015 28.6434 33.3182 28.7298 33.4034C28.8162 33.4885 28.9348 33.5419 29.0654 33.5419C29.196 33.5419 29.3146 33.4885 29.401 33.4034C29.4875 33.3182 29.5417 33.2015 29.5417 33.0728C29.5417 32.9442 29.4875 32.8274 29.401 32.7423C29.3146 32.6572 29.196 32.6038 29.0654 32.6038ZM23.3534 0.778347V5.94189H28.9105L23.3534 0.778347ZM4.10392 22.037L3.08094 24.2616C3.06487 24.2933 3.04879 24.325 3.03271 24.3527L2.09015 25.9637V42.5513L22.9135 42.296L22.5397 41.9279C20.3571 39.7785 19.2678 36.9522 19.2678 34.1139C19.2678 31.2817 20.3571 28.4493 22.5397 26.2999C24.6419 24.2297 27.3812 23.1589 30.1486 23.0837L30.0501 7.11527H22.7489C22.4193 7.11527 22.1479 6.84808 22.1479 6.52347L22.15 0H2.09063V6.33549H3.57985C3.90945 6.33549 4.18078 6.60268 4.18078 6.92729V6.98073L4.16471 21.8031C4.16471 21.8882 4.14863 21.9693 4.11044 22.0425L4.10392 22.037ZM2.91414 21.7658L1.99365 23.7668L1.49523 24.6199L0.98676 23.751L0.0441962 21.7678H2.91413L2.91414 21.7658ZM0.0160688 8.80606V7.5156H2.97846V8.80606H0.0160688ZM2.97244 12.2242L2.96239 20.5864H0L0.0100488 12.2242H2.97244ZM0.0100488 11.0446V9.98768H2.97244V11.0446H0.0100488ZM7.95084 11.4404C7.62124 11.4404 7.3499 11.1732 7.3499 10.8486C7.3499 10.524 7.62122 10.2568 7.95084 10.2568H25.4335C25.7631 10.2568 26.0345 10.524 26.0345 10.8486C26.0345 11.1732 25.7632 11.4404 25.4335 11.4404H7.95084ZM7.95084 16.8102C7.62124 16.8102 7.3499 16.543 7.3499 16.2184C7.3499 15.8938 7.62122 15.6266 7.95084 15.6266H25.4335C25.7631 15.6266 26.0345 15.8938 26.0345 16.2184C26.0345 16.543 25.7632 16.8102 25.4335 16.8102H7.95084ZM7.95084 22.182C7.62124 22.182 7.3499 21.9148 7.3499 21.5902C7.3499 21.2656 7.62122 20.9984 7.95084 20.9984H25.4335C25.7631 20.9984 26.0345 21.2655 26.0345 21.5902C26.0345 21.9147 25.7632 22.182 25.4335 22.182H7.95084ZM7.95084 27.5477C7.62124 27.5477 7.3499 27.2805 7.3499 26.9559C7.3499 26.6313 7.62122 26.3641 7.95084 26.3641H19.5513C19.8809 26.3641 20.1522 26.6313 20.1522 26.9559C20.1522 27.2805 19.8809 27.5477 19.5513 27.5477H7.95084ZM7.95084 32.9195C7.62124 32.9195 7.3499 32.6523 7.3499 32.3277C7.3499 32.0031 7.62122 31.7359 7.95084 31.7359H17.7104C18.04 31.7359 18.3113 32.0031 18.3113 32.3277C18.3113 32.6523 18.04 32.9195 17.7104 32.9195H7.95084ZM35.9386 43.4528H25.0096V44.1138H35.9386V43.4528ZM34.4232 20.1831L33.4967 23.5913C33.4103 23.906 33.5992 24.2306 33.9188 24.3118C34.2383 24.3909 34.5679 24.2108 34.6504 23.8961L35.5769 20.4879C35.6633 20.1732 35.4744 19.8487 35.1548 19.7675C34.8353 19.6824 34.5057 19.8684 34.4232 20.1831ZM37.878 21.6339L36.0913 24.6838C35.9285 24.9669 36.027 25.3231 36.3124 25.4834C36.5998 25.6437 36.9615 25.5468 37.1243 25.2657L38.911 22.2158C39.0738 21.9327 38.9753 21.5765 38.6899 21.4162C38.4025 21.2559 38.0408 21.3528 37.878 21.6339ZM40.9811 24.001L38.4025 26.5403C38.1694 26.7699 38.1694 27.144 38.4025 27.3716C38.6357 27.6012 39.0155 27.6012 39.2466 27.3716L41.8252 24.8323C42.0583 24.6027 42.0583 24.2286 41.8252 24.001C41.592 23.7714 41.2122 23.7714 40.9811 24.001Z" fill="#0F245F"/>
+                            </svg>
+                            <div class="description col-10">
+                                <h4 class="font-18 font-medium inter color-primary">Gestão Eficiente</h4>
+                                <p class="font-light font-15 inter">Processos otimizados que garantem resultados financeiros e operacionais positivos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="dif-item d-flex justify-content-between align-items-start">
+                            <svg width="35" height="48" viewBox="0 0 35 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_59_463)">
+                            <path d="M33.3765 6.20453C28.4717 5.99999 23.4644 4.07388 18.5081 0.460349C17.9099 0.034213 17.0896 0.034213 16.4915 0.460349C11.5354 4.07399 6.52797 5.99999 1.62305 6.20453C0.700195 6.23862 -0.0175781 6.98862 -0.0175781 7.90908V24.0338C-0.0175781 34.3462 6.45961 43.7553 16.1152 47.4545C16.6963 47.6761 17.4311 48.0341 18.0635 47.7784C28.1976 44.2841 35.0166 34.7557 35.0166 24.0511V7.90894C35.0166 6.98849 34.2988 6.23849 33.376 6.2044L33.3765 6.20453ZM28.1129 19.7727L17.2093 30.6305C16.9016 30.9544 16.4573 31.1419 16.013 31.1419C15.5515 31.1419 15.1243 30.9544 14.7996 30.6305L8.59581 24.4604C7.92928 23.7955 7.92928 22.7046 8.59581 22.0399C9.26234 21.3752 10.3561 21.3751 11.0226 22.0399L16.0128 27.0172L25.6859 17.3692C26.3525 16.7044 27.4462 16.7044 28.1127 17.3692C28.7792 18.034 28.7794 19.108 28.1129 19.7727Z" fill="#0F245F"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_59_463">
+                            <rect width="35" height="48" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                            <div class="description col-10">
+                                <h4 class="font-18 font-medium inter color-primary">Segurança & Confiança</h4>
+                                <p class="font-light font-15 inter">Garantimos a segurança patrimonial e a tranquilidade dos condôminos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="about" class="about-section py-5 position-relative">
+            <div class="container">
+                <div class="row align-items-start">
+
+                    <!-- IMAGEM -->
+                    <div class="col-12 col-lg-4 mt-0">
+                        <div class="about-img">
+                            <!-- Coloque sua imagem aqui -->
+                            <img src="assets/images/about.png" alt="Sobre nós">
+                        </div>
+                    </div>
+
+                    <!-- TEXTO -->
+                    <div class="col-12 col-lg-8 mt-0">
+                        <h2 class="about-title mb-4 font-25 font-medium inter color-primary d-table w-auto">Sobre nós</h2>
+
+                        <p class="font-15 font-regular color-text inter">A S&A Gestão Condominial nasceu com a missão de transformar a experiência de viver em condomínio, combinando excelência em serviços com um atendimento humanizado e transparente.</p>
+
+                        <p class="font-15 font-regular color-text inter">Entendemos que um condomínio vai além de um conjunto de edifícios; é um ambiente, um lar que merece uma administração profissional, eficiente e confiável.</p>
+
+                        <p class="font-15 font-regular color-text inter">Composta por uma equipe de profissionais com expertise e dedicados, oferecemos soluções completas e personalizadas para síndicos e condôminos, cobrindo todas as áreas da gestão: administrativa, financeira e operacional.</p>
+
+                        <p class="font-15 font-regular color-text inter">Nosso modelo de trabalho se baseia na ética, transparência e no uso de tecnologia, garantindo que todas as informações estejam sempre acessíveis e claras para os condôminos.</p>
+
+                        <!-- ACCORDION -->
+                        <div class="accordion mt-4" id="accordionAbout">
+
+                            <div class="accordion-item border-0 mb-2">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-grey" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#missao">
+                                        Missão
+                                    </button>
+                                </h2>
+                                <div id="missao" class="accordion-collapse collapse">
+                                    <div class="accordion-body border">
+                                        <!-- Conteúdo da missão -->
+                                        Nossa missão aqui... Nosso modelo de trabalho se baseia na ética, transparência e no uso de tecnologia, garantindo que todas as informações estejam sempre acessíveis e claras para os condôminos.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item border-0 mb-2">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-grey" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#visao">
+                                        Visão
+                                    </button>
+                                </h2>
+                                <div id="visao" class="accordion-collapse collapse">
+                                    <div class="accordion-body border">
+                                        <!-- Conteúdo da visão -->
+                                        Nossa visão aqui... Nosso modelo de trabalho se baseia na ética, transparência e no uso de tecnologia, garantindo que todas as informações estejam sempre acessíveis e claras para os condôminos.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item border-0 mb-3">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-grey" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#valores">
+                                        Valores
+                                    </button>
+                                </h2>
+                                <div id="valores" class="accordion-collapse collapse">
+                                    <div class="accordion-body border">
+                                        <!-- Conteúdo dos valores -->
+                                        Nossos valores aqui... Nosso modelo de trabalho se baseia na ética, transparência e no uso de tecnologia, garantindo que todas as informações estejam sempre acessíveis e claras para os condôminos.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- BOTÃO -->
+                        <div class="secao-botao position-relative">
+                            <a href="#" class="btn-representante text-white bg-primary" target="_blank" rel="noopener noreferrer">Falar com um representante</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <svg class="firula-about" width="482" height="573" viewBox="0 0 482 573" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M363.551 290.138L95.0514 446.638C87.8514 449.838 86.7181 457.305 87.0514 460.638V572.138L481.551 343.638C455.218 329.805 400.151 299.938 390.551 291.138C380.951 282.338 368.551 286.805 363.551 290.138Z" fill="#00AEF2" fill-opacity="0.1"/>
+            <path d="M304.551 157.138L36.0514 313.638C28.8514 316.838 27.7181 324.305 28.0514 327.638V439.138L422.551 210.638C396.218 196.805 341.151 166.938 331.551 158.138C321.951 149.338 309.551 153.805 304.551 157.138Z" fill="#00AEF2" fill-opacity="0.1"/>
+            <path d="M276.551 4.13818L8.05141 160.638C0.851415 163.838 -0.281919 171.305 0.051414 174.638V286.138L394.551 57.6382C368.218 43.8048 313.151 13.9382 303.551 5.13818C293.951 -3.66182 281.551 0.804849 276.551 4.13818Z" fill="#00AEF2" fill-opacity="0.1"/>
+            </svg>
+        </section>
+
+        <section id="service" class="service py-5 bg-white">
+            <div class="container">
+
+                <h3 class="section-title mb-4 d-table w-auto">
+                    Conheça nossos serviços
+                </h3>
+
+                <div class="row g-4">
+
+                    <!-- Serviço -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="servico-card py-3 px-2 text-center shadow h-100 rounded-2">
+                            <div class="gradient rounded-circle m-auto mb-3">
+                                <img src="assets/images/icon-0.svg" alt="Icon-0" loading="lazy">
+                            </div>
+
+                            <h5 class="servico-title mb-4 font-20 font-medium inter color-primary">Administração de Condomínios</h5>
+                            <p class="font-15 font-regular color-text inter">
+                                Oferecemos soluções completas, com tecnologia e transparência, proporcionando tranquilidade e satisfação aos nossos clientes, e o efetivo funcionamento do condomínio, trazendo mais economia, organização, eficiência e eficácia para a gestão.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Serviço -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="servico-card py-3 px-2 text-center shadow h-100 rounded-2">
+                            <div class="gradient rounded-circle m-auto mb-3">
+                                <img src="assets/images/icon-1.svg" alt="Icon-1" loading="lazy">
+                            </div>
+                            <h5 class="servico-title mb-4 font-20 font-medium inter color-primary">Planejamento Financeiro</h5>
+                            <p class="font-15 font-regular color-text inter">
+                                Planejamento e gestão orçamentária do condomínio, controle de contas a pagar e receber, rateio das despesas ordinárias e extraordinárias, prestação de contas, previsões orçamentárias, emissão  e controle de recebimento  de boletos,  balancetes,    demonstrativos de receitas e despesas, rateio das despesas ordinárias e extraordinárias,  relatórios de títulos em aberto, controle e cobrança administrativa e judicial de inadimplência
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Serviço -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="servico-card py-3 px-2 text-center shadow h-100 rounded-2">
+                            <div class="gradient rounded-circle m-auto mb-3">
+                                <img src="assets/images/icon-2.svg" alt="Icon-2" loading="lazy">
+                            </div>
+                            <h5 class="servico-title mb-4 font-20 font-medium inter color-primary">Síndico Profissional</h5>
+                            <p class="font-15 font-regular color-text inter">
+                                Especialista externo, contratado para prestação de serviço ao condomínio, focado nas atividades e responsabilidades que competem ao Síndico, realizando a administração amparado na Legislação Federal, a Convenção e o Regulamento Interno do Condomínio. Focado na administração eficiente, finanças, manutenção e resolução de conflitos, com conhecimentos em legislação condominial, finanças e gestão de pessoas
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Serviço -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="servico-card py-3 px-2 text-center shadow h-100 rounded-2">
+                            <div class="gradient rounded-circle m-auto mb-3">
+                                <img src="assets/images/icon-3.svg" alt="Icon-3" loading="lazy">
+                            </div>
+                            <h5 class="servico-title mb-4 font-20 font-medium inter color-primary">Segurança</h5>
+                            <p class="font-15 font-regular color-text inter">
+                                A S&A Gestão Condominial tem como objetivo principal, zelar pela segurança, tranquilidade e qualidade de vida no seu condomínio. Mais do que simplesmente fornecer serviços, nossa missão é garantir que cada residente se sinta protegido em seu lar. Nosso Foco: Sua Tranquilidade!  Contamos com uma equipe de profissionais altamente treinados, para criar um ambiente verdadeiramente seguro.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Serviço -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="servico-card py-3 px-2 text-center shadow h-100 rounded-2">
+                            <div class="gradient rounded-circle m-auto mb-3">
+                                <img src="assets/images/icon-4.svg" alt="Icon-4" loading="lazy">
+                            </div>
+                            <h5 class="servico-title mb-4 font-20 font-medium inter color-primary">Gestão de Boletos</h5>
+                            <p class="font-15 font-regular color-text inter">
+                                Emissão, controle e acompanhamento de boletos com sistema integrado.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Serviço -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="servico-card py-3 px-2 text-center shadow h-100 rounded-2">
+                            <div class="gradient rounded-circle m-auto mb-3">
+                                <img src="assets/images/icon-5.svg" alt="Icon-5" loading="lazy">
+                            </div>
+                            <h5 class="servico-title mb-4 font-20 font-medium inter color-primary">Controle Patrimonial</h5>
+                            <p class="font-15 font-regular color-text inter">
+                                Serviço de controle com o objetivo de identificar, registrar, monitorar e gerenciar todos os bens móveis e imóveis do condomínio, visando garantir sua integridade, otimizar o uso, prevenir perdas e auxiliar na prestação de contas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Serviço -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="servico-card py-3 px-2 text-center shadow h-100 rounded-2">
+                            <div class="gradient rounded-circle m-auto mb-3">
+                                <img src="assets/images/icon-6.svg" alt="Icon-6" loading="lazy">
+                            </div>
+                            <h5 class="servico-title mb-4 font-20 font-medium inter color-primary">Cobranças</h5>
+                            <p class="font-15 font-regular color-text inter">
+                                Gestão eficiente da cobrança condominial com acompanhamento e notificação de inadimplentes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Serviço -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="servico-card py-3 px-2 text-center shadow h-100 rounded-2">
+                            <div class="gradient rounded-circle m-auto mb-3">
+                                <img src="assets/images/icon-7.svg" alt="Icon-7" loading="lazy">
+                            </div>
+                            <h5 class="servico-title mb-4 font-20 font-medium inter color-primary">Departamento de Pessoal</h5>
+                            <p class="font-15 font-regular color-text inter">
+                                Realização e implementação de rotinas trabalhistas: Recrutamento e Seleção de funcionários, pesquisa cadastral, admissão e procedimentos de registro, contrato de experiência, treinamento, atualização das fichas de registro, atualização das carteiras profissionais, benefícios, férias, rescisões, afastamentos entre outras, incluindo as exigências legais delimitadas pelo Governo em relação ao E-Social.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Serviço -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="servico-card py-3 px-2 text-center shadow h-100 rounded-2">
+                            <div class="gradient rounded-circle m-auto mb-3">
+                                <img src="assets/images/icon-8.svg" alt="Icon-8" loading="lazy">
+                            </div>
+                            <h5 class="servico-title mb-4 font-20 font-medium inter color-primary">Consultoria Técnica</h5>
+                            <p class="font-15 font-regular color-text inter">
+                                Prestação de serviços especializados por profissionais, para auxiliar o síndico, a administração ou os condôminos na gestão, manutenção e resolução de problemas que exigem conhecimento técnico específico, que vão além das rotinas administrativas ou de manutenção básica, como as que envolvem engenharia, arquitetura, legislação específica, segurança ou finanças complexas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Serviço -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="servico-card py-3 px-2 text-center shadow h-100 rounded-2">
+                            <div class="gradient rounded-circle m-auto mb-3">
+                                <img src="assets/images/icon-9.svg" alt="Icon-9" loading="lazy">
+                            </div>
+                            <h5 class="servico-title mb-4 font-20 font-medium inter color-primary">Planejamento de Obras</h5>
+                            <p class="font-15 font-regular color-text inter">
+                                Organização detalhada de reformas ou construções, desde o estudo inicial até a entrega, para garantir que tudo ocorra dentro do prazo, orçamento e normas, minimizando transtornos aos moradores e assegurando a segurança, com foco em cronograma, custos, recursos (materiais, equipe) e regras condominiais, visando evitar atrasos e gastos extras. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Serviço (Destaque em vermelho) -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="servico-card py-3 px-2 text-center shadow h-100 rounded-2">
+                            <div class="gradient rounded-circle m-auto mb-3">
+                                <img src="assets/images/icon-10.svg" alt="Icon-10" loading="lazy">
+                            </div>
+                            <h5 class="servico-title red mt-3">Terceirização de Serviços</h5>
+                            <p class="font-15 font-regular color-text inter">
+                                A terceirização proporciona ao seu condomínio vantagens como redução de custos (evitando encargos trabalhistas e passivos), maior qualidade e profissionalismo (acesso a equipes treinadas e especializadas), menos burocracia (a empresa cuida de folha de pagamento e registros), flexibilidade (substituição fácil de funcionários), e otimização do tempo do síndico para focar na gestão, resultando em mais organização, segurança e valorização do patrimônio.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="parallax" class="parallax position-relative">
+            <div class="container h-100 d-flex justify-content-between align-items-center">
+                <h3 class="font-25 font-regular text-white inter">Somos o verdadeiro conceito de Gestão Condominial</h3>
+                <div class="secao-botao position-relative">
+                    <a href="#" class="btn-representante text-white bg-primary" target="_blank" rel="noopener noreferrer">Falar com um representante</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact mb-0 mt-4">
+            
+            <div class="container py-5">
+                <div class="mb-3">
+                    <h3 class="montserrat-bold font-30 mb-0 title-blue">Entre em Contato</h3>
+                    <p class="mb-0 text-color montserrat-regular font-15">Encontre o nosso endereço, entre em contato via formulário ou através das nossas redes sociais!</p>
+                </div>
+                <!-- Filiais -->
+                <div class="row g-3 mb-4">  
+                    <div class="col-md-4">
+                        <div class="border rounded p-2 h-auto bg-white">                                                        
+                            <div class="d-flex gap-2 justify-content-center align-items-center">
+                                <svg width="27" height="36" viewBox="0 0 27 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.7578 34.3164C1.77734 19.9609 0 18.457 0 13.125C0 5.87891 5.81055 0 13.125 0C20.3711 0 26.25 5.87891 26.25 13.125C26.25 18.457 24.4043 19.9609 14.4238 34.3164C13.8086 35.2734 12.373 35.2734 11.7578 34.3164ZM13.125 18.5938C16.1328 18.5938 18.5938 16.2012 18.5938 13.125C18.5938 10.1172 16.1328 7.65625 13.125 7.65625C10.0488 7.65625 7.65625 10.1172 7.65625 13.125C7.65625 16.2012 10.0488 18.5938 13.125 18.5938Z" fill="#0F235E"/>
+                                </svg>
+
+                                <div class="my-2 col-9">
+                                    <h6 class="font-medium font-18 mb-2">
+                                        Endereço
+                                    </h6>
+                                    <p class="font-15 font-regular color-text inter">Avenida Tancredo Neves, 2.227, Edifício Salvador Prime, Sala 603 - Caminho das Árvores - Salvador/BA</p>
+                                </div>
+                            </div>
+                                                                                
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="border rounded p-2 h-auto bg-white">                                                        
+                            <div class="d-flex gap-2 justify-content-center align-items-center">
+                                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M33.9746 24.7461C34.5215 25.0195 34.9316 25.6348 34.9316 26.3184C34.9316 26.3867 34.9316 26.5234 34.9316 26.6602L33.291 33.7695C33.0859 34.5215 32.4707 35 31.7188 35C14.1504 35 0 20.8496 0 3.28125C0 2.5293 0.478516 1.91406 1.23047 1.70898L8.33984 0.0683594C8.47656 0.0683594 8.61328 0 8.68164 0C9.36523 0 9.98047 0.410156 10.2539 1.02539L13.5352 8.68164C13.6035 8.88672 13.6719 9.0918 13.6719 9.29688C13.6719 9.84375 13.3984 10.3223 13.0566 10.5957L8.88672 14.0137C11.416 19.3457 15.6543 23.584 20.9863 26.1133L24.4043 21.9434C24.6777 21.6016 25.1562 21.3281 25.6348 21.3281C25.9082 21.3281 26.1133 21.3965 26.3184 21.4648L33.9746 24.7461Z" fill="#0F235E"/>
+                                </svg>
+
+                                <div class="my-2 col-9">
+                                    <h6 class="font-medium font-18 mb-2">
+                                        Telefone
+                                    </h6>
+                                    <p class="font-15 font-regular color-text inter">(71) 3995–1022</p>
+                                </div>
+                            </div>
+                                                                                
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="border rounded p-2 h-auto bg-white">                                                        
+                            <div class="d-flex gap-2 justify-content-center align-items-center">
+                                <svg width="35" height="27" viewBox="0 0 35 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M34.3164 8.68164C34.5898 8.47656 35 8.68164 35 9.02344V22.9688C35 24.8145 33.4961 26.25 31.7188 26.25H3.28125C1.43555 26.25 0 24.8145 0 22.9688V9.02344C0 8.68164 0.341797 8.47656 0.615234 8.68164C2.1875 9.91211 4.16992 11.416 11.1426 16.4746C12.5781 17.5 15.0391 19.7559 17.5 19.7559C19.8926 19.7559 22.4219 17.5 23.7891 16.4746C30.7617 11.416 32.7441 9.91211 34.3164 8.68164ZM17.5 17.5C15.8594 17.5684 13.6035 15.5176 12.4414 14.6973C3.34961 8.13477 2.66602 7.51953 0.615234 5.87891C0.205078 5.60547 0 5.12695 0 4.58008V3.28125C0 1.50391 1.43555 0 3.28125 0H31.7188C33.4961 0 35 1.50391 35 3.28125V4.58008C35 5.12695 34.7266 5.60547 34.3164 5.87891C32.2656 7.51953 31.582 8.13477 22.4902 14.6973C21.3281 15.5176 19.0723 17.5684 17.5 17.5Z" fill="#0F235E"/>
+                                </svg>
+
+                                <div class="my-2 col-9">
+                                    <h6 class="font-medium font-18 mb-2">
+                                        E-mail
+                                    </h6>
+                                    <p class="font-15 font-regular color-text inter">contato@seagestaocondominial.com.br</p>
+                                </div>
+                            </div>
+                                                                                
+                        </div>
+                    </div>                               
+                </div>
+                <!-- Formulário e Mapa -->
+                <div class="row g-4 mt-4">
+                    <div class="col-lg-8">
+                        <form id="contactForm">
+                            <input type="hidden" name="_token" value="SFVlLaKRs35Lv6wK62XQWKNDCaBT13lwis5e0H51" autocomplete="off">                        
+                            <div class="row g-3">
+                                <div class="col-md-12">
+                                    <input type="text" required="" id="nome" name="name" class="montserrat-regular font-15 text-color form-control" placeholder="Nome Completo">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" required="" id="email" name="email" class="montserrat-regular font-15 text-color form-control" placeholder="E-mail">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" required="" id="phone" name="phone" class="montserrat-regular font-15 text-color form-control" placeholder="Whatsapp para contato">
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="text" required="" id="subject" name="subject" class="montserrat-regular font-15 text-color form-control" placeholder="Assunto">
+                                </div>
+                                <div class="col-md-12">
+                                    <textarea id="text" required="" name="text" class="form-control montserrat-regular font-15 text-color" rows="4" placeholder="Digite aqui...."></textarea>
+                                </div>
+                                <div class="col-12 d-flex align-items-center flex-wrap">
+                                    <div class="form-check me-3">
+                                        <input class="form-check-input" required="" id="term_privacy" name="term_privacy" type="checkbox" value="1">
+                                        <label class="form-check-label small montserrat-regular font-14 text-color" for="privacyCheck">
+                                            Aceito os termos descritos na Política de Privacidade
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="montserrat-semiBold font-15 btn btn-danger rounded-3 ms-auto px-4">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                                    
+                    <div class="col-lg-4">
+                        <div class="ratio ratio-1x1 rounded border overflow-hidden">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.968308660115!2d-38.511705799999994!3d-12.9738788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71604ef4e342c5f%3A0x157b1e7097463b74!2sSindacs%20-%20Bahia!5e0!3m2!1spt-BR!2sbr!4v1753884594914!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                            </iframe>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id=footer class="footer position-relative bg-primary">
+        <div class="container pb-4 pt-5">
+            <div class="sitemap">
+                <div class="container">
+                    <div class="row justify-content-between align-items-start">
+
+                        <!-- Coluna 1: Logo + Texto + Social -->
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="logo-footer rounded-3 d-flex justify-content-center align-items-start flex-column py-3">
+                                <img src="assets/images/logo-footer.svg" alt="S&A" title="S&A" loading="lazy">
+
+                                <p class="inter font-regular font-15 text-white mt-4 text-center text-md-start col-12 col-lg-10">
+                                    Transformando a experiência de viver em condomínio com excelência, transparência e atendimento humanizado.
+                                </p>
+
+                                <div class="social-links d-flex justify-content-center justify-content-md-start gap-4 mt-3">
+                                    <a href="https://www.instagram.com/agenciawhi" target="_blank" aria-label="Instagram"
+                                    class="dark-background-medium instagram rounded-circle d-flex justify-content-center align-items-center">
+                                    <i class="bi bi-instagram text-white"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/company/106948313/admin/dashboard/" target="_blank" aria-label="LinkedIn"
+                                    class="dark-background-medium linkedin rounded-circle d-flex justify-content-center align-items-center">
+                                    <i class="bi bi-facebook text-white"></i>
+                                    </a>
+                                    <a href="https://wa.me/5571996483853" target="_blank" aria-label="WhatsApp"
+                                    class="dark-background-medium whatsapp rounded-circle d-flex justify-content-center align-items-center">
+                                    <i class="bi bi-whatsapp text-white"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Coluna 2: Mapa do Site -->
+                        <div class="col-12 col-md-3 mb-3">
+                            <h6 class="inter font-semibold text-white mb-3"><b>Mapa do Site</b></h6>
+                            <ul class="list-unstyled">
+                                <li class="inter font-regular font-15 text-white mb-2"><a href="#hero">Home</a></li>
+                                <li class="inter font-regular font-15 text-white mb-2"><a href="#about">Quem Somos</a></li>
+                                <li class="inter font-regular font-15 text-white mb-2"><a href="#diferenciais">Diferenciais</a></li>
+                                <li class="inter font-regular font-15 text-white mb-2"><a href="#service">Serviços</a></li>
+                                <li class="inter font-regular font-15 text-white mb-2"><a href="#contact">Contatos</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Coluna 3: Contato -->
+                        <div class="col-12 col-md-4 mb-4">
+                            <h6 class="inter font-semibold text-white mb-3"><b>Contato</b></h6>
+                            <ul class="list-unstyled">
+                                <li class="inter font-regular font-15 text-white mb-2">
+                                    <a href="">Av. Tancredo Neves, 2.227, Salvador/BA</a>
+                                </li>
+                                <li class="inter font-regular font-15 text-white mb-2">
+                                    <a href="">(71) 3995–1022</a>
+                                </li>
+                                <li class="inter font-regular font-15 text-white mb-2">
+                                    <a href="">contato@seagestaocondominial.com.br</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+                <div class="col-2"></div>
+                <div class="copyright text-center">
+                    <p id="footer-text" class="inter font-15 font-light text-white mb-0"></p>
+                    <script defer>
+                        const currentYear = (new Date).getFullYear();
+                        document.getElementById("footer-text").innerHTML = ` ©${currentYear} S&A Gestão Condominial <span> todos os direitos reservados. | <a href="assets/politica-de-privacidade.pdf" target="_blank" rel="noopener noreferrer">Política de Privacidade</a></span>`
+                    </script>
+                </div>
+                <div class=credits>
+                    <a href=https://whi.dev.br/>
+                    <img src="assets/images/whi.svg"  alt="WHI - Web de Alta Inovação" title="WHI - Web de Alta Inovação" loading=lazy>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href=# id=scroll-top class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+        
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.addEventListener('scroll', function () {
+            const header = document.getElementById('header');
+            const btn = document.querySelector('.btn-orcamento-link');
+
+            if (window.scrollY > 50) {
+
+                // Header ganha fundo
+                header.classList.add('bg-primary');
+
+                // Botão muda cor
+                btn.classList.remove('bg-primary');
+                btn.classList.add('bg-secundari');
+
+                // Pseudo-elemento vira secundário
+                btn.style.setProperty('--btn-before-color', 'var(--color-secundary)');
+
+            } else {
+
+                // Header volta a ficar transparente
+                header.classList.remove('bg-primary');
+
+                // Botão volta ao original
+                btn.classList.add('bg-primary');
+                btn.classList.remove('bg-secundari');
+
+                // ::before volta ao primary
+                btn.style.setProperty('--btn-before-color', 'var(--color-primary)');
+            }
+        });
+    </script>
+</body>
+</html>
