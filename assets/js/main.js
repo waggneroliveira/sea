@@ -231,4 +231,43 @@
         n && (window.scrollY > 100 ? n.classList.add("active") : n.classList.remove("active"));
     }));
 
+    document.querySelectorAll("form").forEach(form => {
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            const data = new FormData(form);
+            let message = "";
+
+            const labels = {
+                nome: "Nome",
+                name: "Nome",
+                email: "E-mail",
+                telefone: "Telefone",
+                phone: "Telefone",
+                condominio: "Condomínio",
+                condominium: "Condomínio",
+                mensagem: "Mensagem",
+                message: "Mensagem"
+            };
+
+            // Campos que NÃO devem ir para o WhatsApp
+            const ignoreFields = ["term_privacy", "privacy", "lgpd", "terms"];
+
+            for (const [key, value] of data.entries()) {
+                if (
+                    value.trim() !== "" &&
+                    !ignoreFields.includes(key) // ignora termo de privacidade
+                ) {
+                    message += `${labels[key] || key}: ${value}\n`;
+                }
+            }
+
+            const url = `https://wa.me/5571982743414?text=${encodeURIComponent(message)}`;
+            window.open(url, "_blank");
+
+            // Limpa todos os campos do formulário
+            form.reset();
+        });
+    });
+
 })();
