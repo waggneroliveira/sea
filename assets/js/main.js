@@ -262,7 +262,7 @@
                 }
             }
 
-            const url = `https://wa.me/5571982743414?text=${encodeURIComponent(message)}`;
+            const url = `https://wa.me/557192490944?text=${encodeURIComponent(message)}`;
             window.open(url, "_blank");
 
             // Limpa todos os campos do formulário

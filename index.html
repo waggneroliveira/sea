@@ -44,28 +44,36 @@
     <meta name="ICBM" content="-12.9718, -38.5011">
 </head>
 <body>
-    <header id="header" class="fixed-top"> 
+    <header id="header" class="fixed-top bg-primary"> 
         <div class="container-fluid p-2 pe-lg-0">
             <div class="container-header m-auto me-0 d-flex align-items-center justify-content-between p-2 pe-lg-0">
-                <div class="logo-img px-3 py-2 rounded-2 d-flex justify-content-center align-items-center">
-                    <img src="assets/images/logo-footer.svg" alt="S&A" title="S&A" class="img-fluid">
+                <div class="logo-img px-3 py-2 rounded-2 d-flex justify-content-center align-items-center d-none d-lg-block">
+                    <a href="#hero">
+                        <img src="assets/images/logo-footer.svg" alt="S&A" title="S&A" class="img-fluid">
+                    </a>
                 </div>
 
-                <nav class="navbar navbar-expand-lg navbar-light gap-5">
+                <nav class="navbar navbar-expand-lg navbar-dark gap-5">
+                    <div class="logo-img px-3 py-2 rounded-2 d-flex justify-content-center align-items-center d-block d-lg-none">
+                        <a href="#hero">
+                            <img src="assets/images/logo-footer.svg" alt="S&A" title="S&A" class="img-fluid">
+                        </a>
+                    </div>
+
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarMenu">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2 text-center">
                             <li class="nav-item">
                                 <a class="nav-link inter font-regular font-18 text-white active" href="#hero">Início</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link inter font-regular font-18 text-white" href="#about">Quem somos</a>
+                                <a class="nav-link inter font-regular font-18 text-white" href="#diferenciais">Diferenciais</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link inter font-regular font-18 text-white" href="#diferenciais">Diferenciais</a>
+                                <a class="nav-link inter font-regular font-18 text-white" href="#about">Quem somos</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link inter font-regular font-18 text-white" href="#service">Serviços</a>
@@ -74,10 +82,31 @@
                                 <a class="nav-link inter font-regular font-18 text-white" href="#contact">Contato</a>
                             </li>
                         </ul>
+                        <div class="btn-orcamento m-0 ms-lg-4 d-table d-lg-none">
+                            <a href="https://wa.me/557192490944" target="_blank" class="btn-orcamento-link font-regular font-18 text-white bg-secundari py-2 px-4">
+                                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_59_535)">
+                                <path d="M14.3981 3.56735H2.8291V4.38878H14.3981V3.56735Z" fill="white"/>
+                                <path d="M14.3981 5.8204H2.8291V6.64183H14.3981V5.8204Z" fill="white"/>
+                                <path d="M8.6021 8.12042H2.8291V8.94185H8.6021V8.12042Z" fill="white"/>
+                                <path d="M7.0151 10.3969H2.8291V11.2184H7.0151V10.3969Z" fill="white"/>
+                                <path d="M16.6979 7.86225V0.469391H0.505859V23C0.505859 23 14.8119 23 14.9729 23C19.1129 23 22.4939 19.55 22.4939 15.3255C22.4939 11.7112 20.0099 8.66021 16.6979 7.86225ZM1.31086 22.1786V1.29082H15.8929V7.72143C15.5939 7.67449 15.2719 7.65102 14.9729 7.65102C10.8329 7.65102 7.45186 11.101 7.45186 15.3255C7.45186 18.3061 9.13086 20.8878 11.5689 22.1551L1.31086 22.1786ZM14.9729 22.1786C11.2699 22.1786 8.25686 19.1041 8.25686 15.3255C8.25686 11.5469 11.2699 8.47245 14.9729 8.47245C18.6759 8.47245 21.6889 11.5469 21.6889 15.3255C21.6889 19.1041 18.6759 22.1786 14.9729 22.1786Z" fill="white"/>
+                                <path d="M19.1588 15.2082C19.2278 15.1378 19.2508 15.0439 19.2278 14.9265L18.9978 12.6735C18.9748 12.4622 18.7908 12.3214 18.6068 12.3449L16.3068 12.6031C16.2148 12.6031 16.1228 12.6735 16.0538 12.7439C15.9848 12.8143 15.9618 12.9082 15.9848 13.0255C15.9848 13.1194 16.0538 13.2133 16.1228 13.2837C16.1918 13.3541 16.2838 13.3775 16.3988 13.3541L17.9168 13.1898L17.8708 13.2367L15.2488 16.4755L15.2258 16.452L13.5238 14.7388C13.4548 14.6684 13.3628 14.6214 13.2708 14.6214H13.2478C13.1558 14.6214 13.0638 14.6684 12.9948 14.7388L10.3498 17.8133C10.2808 17.8837 10.2578 17.9775 10.2578 18.0714C10.2578 18.1653 10.3038 18.2592 10.3728 18.3296C10.4418 18.4 10.5338 18.4235 10.6258 18.4235C10.7178 18.4235 10.8098 18.3765 10.8788 18.3061L13.2478 15.5367L13.2708 15.5602L14.9958 17.2735C15.0648 17.3439 15.1568 17.3908 15.2718 17.3908C15.3638 17.3908 15.4788 17.3439 15.5248 17.25L18.3538 13.7531L18.4918 14.9969C18.5148 15.2082 18.6988 15.349 18.9058 15.3255C18.9978 15.349 19.0898 15.2786 19.1588 15.2082Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_59_535">
+                                <rect width="23" height="23" fill="white"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+
+                                Solicitar orçamento
+                            </a>
+                        </div>
                     </div>
                     
-                    <div class="btn-orcamento m-0 ms-lg-4">
-                        <a href="#" target="_blank" class="btn-orcamento-link font-regular font-18 text-white bg-primary py-2 px-4">
+                    <div class="btn-orcamento m-0 ms-lg-4 d-none d-lg-block">
+                        <a href="https://wa.me/557192490944" target="_blank" class="btn-orcamento-link font-regular font-18 text-white bg-secundari py-2 px-4">
                             <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_59_535)">
                             <path d="M14.3981 3.56735H2.8291V4.38878H14.3981V3.56735Z" fill="white"/>
@@ -102,17 +131,17 @@
         </div>       
     </header>
 
-    <main>
+    <main>        
         <!-- Hero Section -->
         <section id="hero" class="hero position-relative d-flex flex-column section dark-background overflow-hidden">
             <img id="profileImage" src="assets/images/hero.png" alt="Banner Hero" title="Banner Hero" class="image-hero">
             <div class="w-100 d-flex justify-content-center flex-column align-items-center position-absolute description h-100">
                 <div class="max-width container text-center z-1">
-                    <h1 class="text-white mb-4 inter font-regular font-40">Nós cuidamos de tudo para você, nossa prioridade!</h1>
-                    <p class="text-white font-light font-18 mb-5">Oferecemos uma administração completa para condomínios residenciais e comerciais, unindo organização, <br> tecnologia e transparência. Conheça a seguir os nossos serviços.</p>
-                </div>                
+                    <h1 class="text-white mb-4 inter font-regular font-40 font-24-mobile">Nós cuidamos de tudo para você, nossa prioridade!</h1>
+                    <p class="text-white font-light font-18 mb-5 font-15-mobile">Oferecemos uma administração completa para condomínios residenciais e comerciais, unindo organização, <br> tecnologia e transparência. Conheça a seguir os nossos serviços.</p>
+                </div>                              
             </div>
-
+            
             <div class="arrow-animate d-flex justify-content-center align-items-center flex-column w-100">
                 <p class="inter font-light font-15 text-white mb-0">Navegue e conheça</p>
                 <div class="scroll-down-arrow">
@@ -120,41 +149,41 @@
                         <span class="arrow-down"></span>
                     </a>
                 </div>
-            </div>
-        </section>
+            </div>            
+        </section>     
 
         <section id="diferenciais" class="diferenciais bg-grey">
             <div class="container">
-                <div class="row py-4 m-auto">
+                <div class="row py-0 m-auto">
                     <!-- Item 1 -->
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4 py-3 py-3">
                         <div class="dif-item d-flex justify-content-between align-items-start">
                             <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M45.48 17.82C44.46 14.1 42.6 10.5 40.14 7.44C35.76 1.98 30 0 24 0C18 0 12.24 1.98 7.86 7.44C5.4 10.5 3.54 14.1 2.52 17.82C1.08 18.12 0 19.38 0 20.88V30.3C0 32.04 1.38 33.42 3.12 33.42C4.86 33.42 6.24 32.04 6.24 30.3V29.22C8.22 38.28 15.42 48 24 48C31.68 48 38.28 40.2 40.98 31.98C41.28 31.14 41.52 30.3 41.76 29.4V30.24C41.76 31.98 43.14 33.36 44.88 33.36C46.62 33.36 48 31.98 48 30.24V20.88C48 19.32 46.92 18.06 45.48 17.82ZM39.48 31.5C37.56 36.36 32.94 39.9 27.54 40.32C27.24 39.54 26.46 38.94 25.56 38.94H22.44C21.3 38.94 20.34 39.84 20.34 41.04C20.34 42.24 21.3 43.14 22.44 43.14H25.56C26.4 43.14 27.12 42.66 27.48 41.94C30.66 41.7 33.6 40.56 35.94 38.76C35.82 38.88 35.76 39.06 35.64 39.18C34.02 41.4 32.16 43.26 30.24 44.46C28.2 45.78 26.1 46.44 24 46.44C21.9 46.44 19.8 45.78 17.76 44.46C15.84 43.2 13.98 41.4 12.36 39.18C9.24 34.86 7.32 29.22 7.32 24.6C7.32 24.48 7.32 24.36 7.32 24.3C10.14 22.86 12.78 20.46 14.82 17.22C14.88 17.1 14.94 16.98 15 16.92C15.48 16.14 16.5 16.02 17.16 16.62C19.26 18.6 21.96 20.4 25.08 21.78H25.14C27.72 22.92 30.72 22.68 33.18 21.3C33.9 20.88 34.8 20.64 35.7 20.64C37.74 20.64 40.5 23.4 40.56 23.4C40.56 23.82 40.62 24.18 40.62 24.6C40.68 26.7 40.26 29.1 39.48 31.5ZM41.82 20.28C39.96 11.76 32.7 4.2 24 4.2C15.3 4.2 8.1 11.76 6.24 20.28C6.06 19.32 5.46 18.54 4.62 18.12C5.58 14.76 7.26 11.52 9.48 8.76C13.5 3.78 18.66 2.1 24 2.1C29.34 2.1 34.5 3.78 38.52 8.76C40.74 11.52 42.42 14.76 43.38 18.12C42.6 18.54 42 19.32 41.82 20.28Z" fill="#0F245F"/>
                             </svg>
 
                             <div class="description col-10">
-                                <h4 class="font-18 font-medium inter color-primary">Atendimento Humanizado</h4>
-                                <p class="font-light font-15 inter">Valorizamos o relacionamento próximo e transparente com síndicos e condôminos.</p>
+                                <h4 class="font-18 font-medium inter color-primary font-15-mobile">Atendimento Humanizado</h4>
+                                <p class="font-light font-15 inter font-12-mobile">Valorizamos o relacionamento próximo e transparente com síndicos e condôminos.</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Item 2 -->
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4 py-3 py-3">
                         <div class="dif-item d-flex justify-content-between align-items-start">
                             <svg width="42" height="48" viewBox="0 0 42 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4125 45.2964V46.096H34.5298V45.2964H26.4125ZM28.9207 47.2756V48H32.0237V47.2756H28.9207ZM32.8357 32.6038C32.7051 32.6038 32.5865 32.6572 32.5001 32.7423C32.4137 32.8274 32.3594 32.9442 32.3594 33.0728C32.3594 33.2015 32.4137 33.3182 32.5001 33.4034C32.5865 33.4885 32.7051 33.5419 32.8357 33.5419C32.9663 33.5419 33.0849 33.4885 33.1713 33.4034C33.2578 33.3182 33.312 33.2015 33.312 33.0728C33.312 32.9442 33.2578 32.8274 33.1713 32.7423C33.0849 32.6572 32.9663 32.6038 32.8357 32.6038ZM27.8796 31.9051C27.5762 32.204 27.3872 32.6136 27.3872 33.0728C27.3872 33.532 27.5762 33.9417 27.8796 34.2406C28.0424 34.4009 28.2434 34.5335 28.4645 34.6146V42.268H24.5876L23.3898 41.0884C21.4403 39.1686 20.4656 36.6411 20.4656 34.1115C20.4656 31.584 21.4403 29.0546 23.3838 27.1345C25.3273 25.2145 27.8997 24.2607 30.4684 24.2607C33.0349 24.2607 35.6034 25.2206 37.5531 27.1345C39.5026 29.0544 40.4713 31.5818 40.4713 34.1115C40.4713 36.6389 39.4966 39.1684 37.5471 41.0884L36.3493 42.268H33.4251V34.6146C33.6461 34.5295 33.8471 34.4009 34.0099 34.2406C34.3134 33.9417 34.5023 33.532 34.5023 33.0728C34.5023 32.6136 34.3134 32.204 34.0099 31.9051C33.7064 31.6062 33.2904 31.4202 32.8241 31.4202C32.3578 31.4202 31.9419 31.6062 31.6384 31.9051C31.3349 32.204 31.146 32.6136 31.146 33.0728C31.146 33.532 31.3349 33.9417 31.6384 34.2406C31.8012 34.4009 32.0021 34.5335 32.2232 34.6146V42.268H29.6507V34.6146C29.8718 34.5295 30.0727 34.4009 30.2355 34.2406C30.539 33.9417 30.7279 33.532 30.7279 33.0728C30.7279 32.6136 30.539 32.204 30.2355 31.9051C29.9321 31.6062 29.5161 31.4202 29.0498 31.4202C28.5835 31.4202 28.1675 31.6062 27.864 31.9051H27.8796ZM29.0654 32.6038C28.9348 32.6038 28.8162 32.6572 28.7298 32.7423C28.6434 32.8274 28.5891 32.9442 28.5891 33.0728C28.5891 33.2015 28.6434 33.3182 28.7298 33.4034C28.8162 33.4885 28.9348 33.5419 29.0654 33.5419C29.196 33.5419 29.3146 33.4885 29.401 33.4034C29.4875 33.3182 29.5417 33.2015 29.5417 33.0728C29.5417 32.9442 29.4875 32.8274 29.401 32.7423C29.3146 32.6572 29.196 32.6038 29.0654 32.6038ZM23.3534 0.778347V5.94189H28.9105L23.3534 0.778347ZM4.10392 22.037L3.08094 24.2616C3.06487 24.2933 3.04879 24.325 3.03271 24.3527L2.09015 25.9637V42.5513L22.9135 42.296L22.5397 41.9279C20.3571 39.7785 19.2678 36.9522 19.2678 34.1139C19.2678 31.2817 20.3571 28.4493 22.5397 26.2999C24.6419 24.2297 27.3812 23.1589 30.1486 23.0837L30.0501 7.11527H22.7489C22.4193 7.11527 22.1479 6.84808 22.1479 6.52347L22.15 0H2.09063V6.33549H3.57985C3.90945 6.33549 4.18078 6.60268 4.18078 6.92729V6.98073L4.16471 21.8031C4.16471 21.8882 4.14863 21.9693 4.11044 22.0425L4.10392 22.037ZM2.91414 21.7658L1.99365 23.7668L1.49523 24.6199L0.98676 23.751L0.0441962 21.7678H2.91413L2.91414 21.7658ZM0.0160688 8.80606V7.5156H2.97846V8.80606H0.0160688ZM2.97244 12.2242L2.96239 20.5864H0L0.0100488 12.2242H2.97244ZM0.0100488 11.0446V9.98768H2.97244V11.0446H0.0100488ZM7.95084 11.4404C7.62124 11.4404 7.3499 11.1732 7.3499 10.8486C7.3499 10.524 7.62122 10.2568 7.95084 10.2568H25.4335C25.7631 10.2568 26.0345 10.524 26.0345 10.8486C26.0345 11.1732 25.7632 11.4404 25.4335 11.4404H7.95084ZM7.95084 16.8102C7.62124 16.8102 7.3499 16.543 7.3499 16.2184C7.3499 15.8938 7.62122 15.6266 7.95084 15.6266H25.4335C25.7631 15.6266 26.0345 15.8938 26.0345 16.2184C26.0345 16.543 25.7632 16.8102 25.4335 16.8102H7.95084ZM7.95084 22.182C7.62124 22.182 7.3499 21.9148 7.3499 21.5902C7.3499 21.2656 7.62122 20.9984 7.95084 20.9984H25.4335C25.7631 20.9984 26.0345 21.2655 26.0345 21.5902C26.0345 21.9147 25.7632 22.182 25.4335 22.182H7.95084ZM7.95084 27.5477C7.62124 27.5477 7.3499 27.2805 7.3499 26.9559C7.3499 26.6313 7.62122 26.3641 7.95084 26.3641H19.5513C19.8809 26.3641 20.1522 26.6313 20.1522 26.9559C20.1522 27.2805 19.8809 27.5477 19.5513 27.5477H7.95084ZM7.95084 32.9195C7.62124 32.9195 7.3499 32.6523 7.3499 32.3277C7.3499 32.0031 7.62122 31.7359 7.95084 31.7359H17.7104C18.04 31.7359 18.3113 32.0031 18.3113 32.3277C18.3113 32.6523 18.04 32.9195 17.7104 32.9195H7.95084ZM35.9386 43.4528H25.0096V44.1138H35.9386V43.4528ZM34.4232 20.1831L33.4967 23.5913C33.4103 23.906 33.5992 24.2306 33.9188 24.3118C34.2383 24.3909 34.5679 24.2108 34.6504 23.8961L35.5769 20.4879C35.6633 20.1732 35.4744 19.8487 35.1548 19.7675C34.8353 19.6824 34.5057 19.8684 34.4232 20.1831ZM37.878 21.6339L36.0913 24.6838C35.9285 24.9669 36.027 25.3231 36.3124 25.4834C36.5998 25.6437 36.9615 25.5468 37.1243 25.2657L38.911 22.2158C39.0738 21.9327 38.9753 21.5765 38.6899 21.4162C38.4025 21.2559 38.0408 21.3528 37.878 21.6339ZM40.9811 24.001L38.4025 26.5403C38.1694 26.7699 38.1694 27.144 38.4025 27.3716C38.6357 27.6012 39.0155 27.6012 39.2466 27.3716L41.8252 24.8323C42.0583 24.6027 42.0583 24.2286 41.8252 24.001C41.592 23.7714 41.2122 23.7714 40.9811 24.001Z" fill="#0F245F"/>
                             </svg>
                             <div class="description col-10">
-                                <h4 class="font-18 font-medium inter color-primary">Gestão Eficiente</h4>
-                                <p class="font-light font-15 inter">Processos otimizados que garantem resultados financeiros e operacionais positivos.</p>
+                                <h4 class="font-18 font-medium inter color-primary font-15-mobile">Gestão Eficiente</h4>
+                                <p class="font-light font-15 inter font-12-mobile">Processos otimizados que garantem resultados financeiros e operacionais positivos.</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Item 3 -->
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4 py-3 py-3">
                         <div class="dif-item d-flex justify-content-between align-items-start">
                             <svg width="35" height="48" viewBox="0 0 35 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_59_463)">
@@ -167,8 +196,8 @@
                             </defs>
                             </svg>
                             <div class="description col-10">
-                                <h4 class="font-18 font-medium inter color-primary">Segurança & Confiança</h4>
-                                <p class="font-light font-15 inter">Garantimos a segurança patrimonial e a tranquilidade dos condôminos.</p>
+                                <h4 class="font-18 font-medium inter color-primary font-15-mobile">Segurança & Confiança</h4>
+                                <p class="font-light font-15 inter font-12-mobile">Garantimos a segurança patrimonial e a tranquilidade dos condôminos.</p>
                             </div>
                         </div>
                     </div>
@@ -176,8 +205,7 @@
             </div>
         </section>
 
-
-        <section id="about" class="about-section py-5 position-relative">
+        <section id="about" class="about-section py-3 py-lg-5 position-relative">
             <div class="container">
                 <div class="row align-items-start">
 
@@ -191,7 +219,7 @@
 
                     <!-- TEXTO -->
                     <div class="col-12 col-lg-8 mt-0">
-                        <h2 class="about-title mb-4 font-25 font-medium inter color-primary d-table w-auto">Sobre nós</h2>
+                        <h2 class="about-title mt-4 mt-lg-0 mb-4 font-25 font-medium inter color-primary d-table w-auto font-24-mobile">Sobre nós</h2>
 
                         <p class="font-15 font-regular color-text inter">A S&A Gestão Condominial nasceu com a missão de transformar a experiência de viver em condomínio, combinando excelência em serviços com um atendimento humanizado e transparente.</p>
 
@@ -212,9 +240,8 @@
                                     </button>
                                 </h2>
                                 <div id="missao" class="accordion-collapse collapse">
-                                    <div class="accordion-body border">
-                                        <!-- Conteúdo da missão -->
-                                        Nossa missão aqui... Nosso modelo de trabalho se baseia na ética, transparência e no uso de tecnologia, garantindo que todas as informações estejam sempre acessíveis e claras para os condôminos.
+                                    <div class="accordion-body border font-regular inter font-15 color-text font-12-mobile">
+                                        Proporcionar tranquilidade e valorização do patrimônio aos condôminos, por meio de uma gestão séria e transparente. Buscamos a constante inovação e o aprimoramento dos nossos serviços para superar as expectativas de nossos clientes.
                                     </div>
                                 </div>
                             </div>
@@ -227,9 +254,8 @@
                                     </button>
                                 </h2>
                                 <div id="visao" class="accordion-collapse collapse">
-                                    <div class="accordion-body border">
-                                        <!-- Conteúdo da visão -->
-                                        Nossa visão aqui... Nosso modelo de trabalho se baseia na ética, transparência e no uso de tecnologia, garantindo que todas as informações estejam sempre acessíveis e claras para os condôminos.
+                                    <div class="accordion-body border font-regular inter font-15 color-text font-12-mobile">
+                                        Ser reconhecida como referência em gestão condominial, destacando-nos pela qualidade do atendimento, pela eficiência operacional e pelo comprometimento com o bem-estar dos condôminos.
                                     </div>
                                 </div>
                             </div>
@@ -242,9 +268,18 @@
                                     </button>
                                 </h2>
                                 <div id="valores" class="accordion-collapse collapse">
-                                    <div class="accordion-body border">
-                                        <!-- Conteúdo dos valores -->
-                                        Nossos valores aqui... Nosso modelo de trabalho se baseia na ética, transparência e no uso de tecnologia, garantindo que todas as informações estejam sempre acessíveis e claras para os condôminos.
+                                    <div class="accordion-body border font-regular inter font-15 color-text font-12-mobile">
+                                        <ul class="list-unstyled valores-lista">
+                                            <li><b>Integridade:</b> Prezamos pela ética e transparência em todas as nossas relações e ações.</li>
+
+                                            <li><b>Foco no cliente:</b> Entender e atender às necessidades dos clientes, com foco absoluto no que realmente importa para ele.</li>
+
+                                            <li><b>Cuidado com as pessoas:</b> Cuidar do bem-estar das pessoas, fazendo com que todos se sintam seguros, acolhidos e valorizados.</li>
+
+                                            <li><b>Inovação:</b> Utilizamos a tecnologia para otimizar processos, oferecendo mais agilidade e facilitando a vida de síndicos e condôminos.</li>
+
+                                            <li><b>Excelência:</b> Buscamos a melhoria contínua em todos os serviços que oferecemos, focando na qualidade e nos detalhes.</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -252,7 +287,7 @@
 
                         <!-- BOTÃO -->
                         <div class="secao-botao position-relative">
-                            <a href="#" class="btn-representante text-white bg-primary" target="_blank" rel="noopener noreferrer">Falar com um representante</a>
+                            <a href="https://wa.me/557192490944" class="btn-representante text-white bg-primary" target="_blank" rel="noopener noreferrer">Falar com um representante</a>
                         </div>
 
                     </div>
@@ -266,10 +301,10 @@
             </svg>
         </section>
 
-        <section id="service" class="service py-5 bg-white">
+        <section id="service" class="service py-3 py-lg-5 bg-white">
             <div class="container">
 
-                <h3 class="section-title mb-4 d-table w-auto">
+                <h3 class="section-title mb-4 d-table w-auto font-25 font-medium inter font-24-mobile color-primary d-table w-auto">
                     Conheça nossos serviços
                 </h3>
 
@@ -424,25 +459,24 @@
             </div>
         </section>
 
-        <section id="parallax" class="parallax position-relative">
-            <div class="container h-100 d-flex justify-content-between align-items-center">
-                <h3 class="font-25 font-regular text-white inter">Somos o verdadeiro conceito de Gestão Condominial</h3>
+        <section id="parallax" class="parallax position-relative mt-3 mt-lg-5">
+            <div class="container h-100 d-flex justify-content-center justify-content-lg-between align-items-center flex-wrap">
+                <h3 class="font-25 font-regular text-center text-lg-start text-white inter font-24-mobile">Somos o verdadeiro conceito de Gestão Condominial</h3>
                 <div class="secao-botao position-relative">
-                    <a href="#" class="btn-representante text-white bg-primary" target="_blank" rel="noopener noreferrer">Falar com um representante</a>
+                    <a href="https://wa.me/557192490944" class="btn-representante text-white bg-primary" target="_blank" rel="noopener noreferrer">Falar com um representante</a>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact mb-0 mt-4">
+        <section id="contact" class="contact mb-0 mt-3 mt-lg-5">
             
-            <div class="container py-5">
+            <div class="container py-3 py-lg-5">
                 <div class="mb-3">
-                    <h3 class="montserrat-bold font-30 mb-0 title-blue">Entre em Contato</h3>
-                    <p class="mb-0 text-color montserrat-regular font-15">Encontre o nosso endereço, entre em contato via formulário ou através das nossas redes sociais!</p>
+                    <h3 class="inter font-medium font-25 mb-0 font-24-mobile color-primary title-contact d-table w-auto">Entre em Contato</h3>
+                    <p class="mb-0 color-text mt-3 inter font-regular font-15">Encontre o nosso endereço, entre em contato via formulário ou através das nossas redes sociais!</p>
                 </div>
-                <!-- Filiais -->
                 <div class="row g-3 mb-4">  
-                    <div class="col-md-4">
+                    <div class="col-12 col-lg-4">
                         <div class="border rounded p-2 h-auto bg-white">                                                        
                             <div class="d-flex gap-2 justify-content-center align-items-center">
                                 <svg width="27" height="36" viewBox="0 0 27 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -450,17 +484,17 @@
                                 </svg>
 
                                 <div class="my-2 col-9">
-                                    <h6 class="font-medium font-18 mb-2">
+                                    <h6 class="font-medium font-18 mb-2 font-15-mobile">
                                         Endereço
                                     </h6>
-                                    <p class="font-15 font-regular color-text inter">Avenida Tancredo Neves, 2.227, Edifício Salvador Prime, Sala 603 - Caminho das Árvores - Salvador/BA</p>
+                                    <p class="font-15 font-regular font-12-mobile color-text inter mb-0">Avenida Tancredo Neves, 2.227, Edifício Salvador Prime, Sala 603 - Caminho das Árvores - Salvador/BA</p>
                                 </div>
                             </div>
                                                                                 
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-12 col-lg-4">
                         <div class="border rounded p-2 h-auto bg-white">                                                        
                             <div class="d-flex gap-2 justify-content-center align-items-center">
                                 <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -468,17 +502,17 @@
                                 </svg>
 
                                 <div class="my-2 col-9">
-                                    <h6 class="font-medium font-18 mb-2">
+                                    <h6 class="font-medium font-18 mb-2 font-15-mobile">
                                         Telefone
                                     </h6>
-                                    <p class="font-15 font-regular color-text inter">(71) 3995–1022</p>
+                                    <p class="font-15 font-regular font-12-mobile color-text inter mb-0">(71) 3995–1022</p>
                                 </div>
                             </div>
                                                                                 
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-12 col-lg-4">
                         <div class="border rounded p-2 h-auto bg-white">                                                        
                             <div class="d-flex gap-2 justify-content-center align-items-center">
                                 <svg width="35" height="27" viewBox="0 0 35 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -486,45 +520,48 @@
                                 </svg>
 
                                 <div class="my-2 col-9">
-                                    <h6 class="font-medium font-18 mb-2">
+                                    <h6 class="font-medium font-18 mb-2 font-15-mobile">
                                         E-mail
                                     </h6>
-                                    <p class="font-15 font-regular color-text inter">contato@seagestaocondominial.com.br</p>
+                                    <p class="font-15 font-regular font-12-mobile color-text inter mb-0 word-break">contato@seagestaocondominial.com.br</p>
                                 </div>
                             </div>
                                                                                 
                         </div>
                     </div>                               
                 </div>
+                
                 <!-- Formulário e Mapa -->
                 <div class="row g-4 mt-4">
                     <div class="col-lg-8">
-                        <form id="contactForm">
-                            <input type="hidden" name="_token" value="SFVlLaKRs35Lv6wK62XQWKNDCaBT13lwis5e0H51" autocomplete="off">                        
+                        <form>                     
                             <div class="row g-3">
                                 <div class="col-md-12">
-                                    <input type="text" required="" id="nome" name="name" class="montserrat-regular font-15 text-color form-control" placeholder="Nome Completo">
+                                    <input type="text" required="" id="nome" name="name" class="montserrat-regular font-15 color-text form-control" placeholder="Nome Completo">
                                 </div>
-                                <div class="col-md-6">
-                                    <input type="email" required="" id="email" name="email" class="montserrat-regular font-15 text-color form-control" placeholder="E-mail">
+                                <div class="col-md-7">
+                                    <input type="email" required="" id="email" name="email" class="montserrat-regular font-15 color-text form-control" placeholder="E-mail">
                                 </div>
-                                <div class="col-md-6">
-                                    <input type="text" required="" id="phone" name="phone" class="montserrat-regular font-15 text-color form-control" placeholder="Whatsapp para contato">
-                                </div>
-                                <div class="col-md-12">
-                                    <input type="text" required="" id="subject" name="subject" class="montserrat-regular font-15 text-color form-control" placeholder="Assunto">
+                                <div class="col-md-5">
+                                    <input type="text" required="" id="phone" name="phone" class="montserrat-regular font-15 color-text form-control" placeholder="Whatsapp para contato">
                                 </div>
                                 <div class="col-md-12">
-                                    <textarea id="text" required="" name="text" class="form-control montserrat-regular font-15 text-color" rows="4" placeholder="Digite aqui...."></textarea>
+                                    <input type="text" required="" id="condominium" name="condominium" class="montserrat-regular font-15 color-text form-control" placeholder="Condomínio">
                                 </div>
-                                <div class="col-12 d-flex align-items-center flex-wrap">
-                                    <div class="form-check me-3">
+                                <div class="col-md-12">
+                                    <textarea id="text" required="" name="text" class="form-control montserrat-regular font-15 color-text" rows="4" placeholder="Digite aqui sua mensagem...."></textarea>
+                                </div>
+                                <div class="col-12 d-flex align-items-center align-items-lg-center justify-content-end justify-content-lg-between flex-wrap">
+                                    <div class="form-check me-0 me-lg-3 col-12 col-lg-7">
                                         <input class="form-check-input" required="" id="term_privacy" name="term_privacy" type="checkbox" value="1">
-                                        <label class="form-check-label small montserrat-regular font-14 text-color" for="privacyCheck">
-                                            Aceito os termos descritos na Política de Privacidade
+                                        <label class="form-check-label small montserrat-regular font-14 color-text" for="privacyCheck">
+                                            Concordo com a política de privacidade e autorizo a comunicações por e-mail e WhatsApp.
                                         </label>
                                     </div>
-                                    <button type="submit" class="montserrat-semiBold font-15 btn btn-danger rounded-3 ms-auto px-4">Enviar</button>
+                                    
+                                    <div class="secao-botao position-relative me-4 mt-3 mt-lg-0">
+                                        <button type="submit" class="btn-representante text-white bg-primary m-0">Enviar Mensagem</button>
+                                    </div>
                                 </div>
                             </div>
                         </form>
@@ -532,8 +569,8 @@
                                     
                     <div class="col-lg-4">
                         <div class="ratio ratio-1x1 rounded border overflow-hidden">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.968308660115!2d-38.511705799999994!3d-12.9738788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71604ef4e342c5f%3A0x157b1e7097463b74!2sSindacs%20-%20Bahia!5e0!3m2!1spt-BR!2sbr!4v1753884594914!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
-                            </iframe>                        
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.821654348742!2d-38.453349189074295!3d-12.98325615999141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7161b101cd9101f%3A0xd00d03b46d10e639!2sAv.%20Tancredo%20Neves%2C%202%20-%20Pituba%2C%20Salvador%20-%20BA%2C%2041100-800!5e0!3m2!1spt-BR!2sbr!4v1765474407743!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                            </iframe>                              
                         </div>
                     </div>
                 </div>
@@ -549,32 +586,24 @@
 
                         <!-- Coluna 1: Logo + Texto + Social -->
                         <div class="col-12 col-md-4 mb-3">
-                            <div class="logo-footer rounded-3 d-flex justify-content-center align-items-start flex-column py-3">
+                            <div class="logo-footer rounded-3 d-flex justify-content-center align-items-center align-items-lg-start flex-column py-3">
                                 <img src="assets/images/logo-footer.svg" alt="S&A" title="S&A" loading="lazy">
 
-                                <p class="inter font-regular font-15 text-white mt-4 text-center text-md-start col-12 col-lg-10">
+                                <p class="inter font-regular font-15 text-white mt-4 mb-0 text-center text-md-start col-12 col-lg-10">
                                     Transformando a experiência de viver em condomínio com excelência, transparência e atendimento humanizado.
                                 </p>
 
-                                <div class="social-links d-flex justify-content-center justify-content-md-start gap-4 mt-3">
-                                    <a href="https://www.instagram.com/agenciawhi" target="_blank" aria-label="Instagram"
-                                    class="dark-background-medium instagram rounded-circle d-flex justify-content-center align-items-center">
-                                    <i class="bi bi-instagram text-white"></i>
-                                    </a>
-                                    <a href="https://www.linkedin.com/company/106948313/admin/dashboard/" target="_blank" aria-label="LinkedIn"
-                                    class="dark-background-medium linkedin rounded-circle d-flex justify-content-center align-items-center">
-                                    <i class="bi bi-facebook text-white"></i>
-                                    </a>
-                                    <a href="https://wa.me/5571996483853" target="_blank" aria-label="WhatsApp"
+                                <div class="social-links d-flex justify-content-center justify-content-md-start m-auto ms-lg-0 gap-4 mt-3">
+                                    <a href="https://wa.me/557192490944" target="_blank" aria-label="WhatsApp"
                                     class="dark-background-medium whatsapp rounded-circle d-flex justify-content-center align-items-center">
-                                    <i class="bi bi-whatsapp text-white"></i>
+                                    <i class="bi bi-whatsapp text-white font-18"></i>
                                     </a>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Coluna 2: Mapa do Site -->
-                        <div class="col-12 col-md-3 mb-3">
+                        <div class="col-12 col-md-3 mb-3 text-center text-lg-start">
                             <h6 class="inter font-semibold text-white mb-3"><b>Mapa do Site</b></h6>
                             <ul class="list-unstyled">
                                 <li class="inter font-regular font-15 text-white mb-2"><a href="#hero">Home</a></li>
@@ -586,17 +615,35 @@
                         </div>
 
                         <!-- Coluna 3: Contato -->
-                        <div class="col-12 col-md-4 mb-4">
+                        <div class="col-12 col-md-4 mb-4 text-center text-lg-start">
                             <h6 class="inter font-semibold text-white mb-3"><b>Contato</b></h6>
                             <ul class="list-unstyled">
                                 <li class="inter font-regular font-15 text-white mb-2">
-                                    <a href="">Av. Tancredo Neves, 2.227, Salvador/BA</a>
+                                    <a href="https://maps.app.goo.gl/RckgoSR2ez9qqh38A" target="_blank" rel="noopener noreferrer">
+                                        <svg class="me-2" width="12" height="17" viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.375 15.6875C0.8125 9.125 0 8.4375 0 6C0 2.6875 2.65625 0 6 0C9.3125 0 12 2.6875 12 6C12 8.4375 11.1562 9.125 6.59375 15.6875C6.3125 16.125 5.65625 16.125 5.375 15.6875ZM6 8.5C7.375 8.5 8.5 7.40625 8.5 6C8.5 4.625 7.375 3.5 6 3.5C4.59375 3.5 3.5 4.625 3.5 6C3.5 7.40625 4.59375 8.5 6 8.5Z" fill="white"/>
+                                        </svg>
+
+                                        Av. Tancredo Neves, 2.227, Salvador/BA
+                                    </a>
                                 </li>
                                 <li class="inter font-regular font-15 text-white mb-2">
-                                    <a href="">(71) 3995–1022</a>
+                                    <a href="tel:7139951022" target="_blank" rel="noopener noreferrer">
+                                        <svg class="me-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.5312 11.3125C15.7812 11.4375 15.9688 11.7188 15.9688 12.0312C15.9688 12.0625 15.9688 12.125 15.9688 12.1875L15.2188 15.4375C15.125 15.7812 14.8438 16 14.5 16C6.46875 16 0 9.53125 0 1.5C0 1.15625 0.21875 0.875 0.5625 0.78125L3.8125 0.03125C3.875 0.03125 3.9375 0 3.96875 0C4.28125 0 4.5625 0.1875 4.6875 0.46875L6.1875 3.96875C6.21875 4.0625 6.25 4.15625 6.25 4.25C6.25 4.5 6.125 4.71875 5.96875 4.84375L4.0625 6.40625C5.21875 8.84375 7.15625 10.7812 9.59375 11.9375L11.1562 10.0312C11.2812 9.875 11.5 9.75 11.7188 9.75C11.8438 9.75 11.9375 9.78125 12.0312 9.8125L15.5312 11.3125Z" fill="white"/>
+                                        </svg>
+
+                                        (71) 3995–1022
+                                    </a>
                                 </li>
                                 <li class="inter font-regular font-15 text-white mb-2">
-                                    <a href="">contato@seagestaocondominial.com.br</a>
+                                    <a href="mailto:contato@seagestaocondominial.com.br" target="_blank" rel="noopener noreferrer">
+                                        <svg class="me-2" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.6875 3.96875C15.8125 3.875 16 3.96875 16 4.125V10.5C16 11.3438 15.3125 12 14.5 12H1.5C0.65625 12 0 11.3438 0 10.5V4.125C0 3.96875 0.15625 3.875 0.28125 3.96875C1 4.53125 1.90625 5.21875 5.09375 7.53125C5.75 8 6.875 9.03125 8 9.03125C9.09375 9.03125 10.25 8 10.875 7.53125C14.0625 5.21875 14.9688 4.53125 15.6875 3.96875ZM8 8C7.25 8.03125 6.21875 7.09375 5.6875 6.71875C1.53125 3.71875 1.21875 3.4375 0.28125 2.6875C0.09375 2.5625 0 2.34375 0 2.09375V1.5C0 0.6875 0.65625 0 1.5 0H14.5C15.3125 0 16 0.6875 16 1.5V2.09375C16 2.34375 15.875 2.5625 15.6875 2.6875C14.75 3.4375 14.4375 3.71875 10.2812 6.71875C9.75 7.09375 8.71875 8.03125 8 8Z" fill="white"/>
+                                        </svg>
+
+                                        contato@seagestaocondominial.com.br
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -605,24 +652,24 @@
                 </div>
 
             </div>
-            <div class="d-flex justify-content-between align-items-center mt-3">
+            <div class="d-flex justify-content-center justify-content-lg-between align-items-center mt-0 mt-lg-3 flex-wrap">
                 <div class="col-2"></div>
                 <div class="copyright text-center">
                     <p id="footer-text" class="inter font-15 font-light text-white mb-0"></p>
                     <script defer>
                         const currentYear = (new Date).getFullYear();
-                        document.getElementById("footer-text").innerHTML = ` ©${currentYear} S&A Gestão Condominial <span> todos os direitos reservados. | <a href="assets/politica-de-privacidade.pdf" target="_blank" rel="noopener noreferrer">Política de Privacidade</a></span>`
+                        document.getElementById("footer-text").innerHTML = ` ©${currentYear} S&A Gestão Condominial <span> todos os direitos reservados. | <a href="assets/politica-de-privacidade.pdf" target="_blank" rel="noopener noreferrer" class="link-underline font-bold"><b>Política de Privacidade<b></a></span>`
                     </script>
                 </div>
-                <div class=credits>
-                    <a href=https://whi.dev.br/>
-                    <img src="assets/images/whi.svg"  alt="WHI - Web de Alta Inovação" title="WHI - Web de Alta Inovação" loading=lazy>
+                <div class="credits mt-3 mt-lg-0">
+                    <a href="https://whi.dev.br/" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/images/whi.svg"  alt="WHI - Web de Alta Inovação" title="WHI - Web de Alta Inovação" loading="lazy">
                     </a>
                 </div>
             </div>
         </div>
     </footer>
-    <a href=# id=scroll-top class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
         
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -630,36 +677,41 @@
     <script src="assets/vendor/typed.js/typed.umd.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
+    
     <script>
-        document.addEventListener('scroll', function () {
-            const header = document.getElementById('header');
-            const btn = document.querySelector('.btn-orcamento-link');
+        document.addEventListener("DOMContentLoaded", () => {
+            const links = document.querySelectorAll(".navbar-nav .nav-link");
+            const sections = [...links]
+                .map(link => document.querySelector(link.getAttribute("href")))
+                .filter(s => s);
 
-            if (window.scrollY > 50) {
+            // --- ACTIVE NO CLIQUE ---
+            links.forEach(link => {
+                link.addEventListener("click", () => {
+                    links.forEach(l => l.classList.remove("active"));
+                    link.classList.add("active");
+                });
+            });
 
-                // Header ganha fundo
-                header.classList.add('bg-primary');
+            // --- ACTIVE AO ROLAR ---
+            window.addEventListener("scroll", () => {
+                const offsetHeader = 101; // mesmo valor do CSS
 
-                // Botão muda cor
-                btn.classList.remove('bg-primary');
-                btn.classList.add('bg-secundari');
+                let scrollPos = window.scrollY + offsetHeader + 10; // margem leve
 
-                // Pseudo-elemento vira secundário
-                btn.style.setProperty('--btn-before-color', 'var(--color-secundary)');
+                sections.forEach((section, index) => {
+                    const top = section.offsetTop;
+                    const bottom = top + section.offsetHeight;
 
-            } else {
+                    if (top <= scrollPos && bottom > scrollPos) {
+                        links.forEach(l => l.classList.remove("active"));
+                        links[index].classList.add("active");
+                    }
+                });
+            });
 
-                // Header volta a ficar transparente
-                header.classList.remove('bg-primary');
-
-                // Botão volta ao original
-                btn.classList.add('bg-primary');
-                btn.classList.remove('bg-secundari');
-
-                // ::before volta ao primary
-                btn.style.setProperty('--btn-before-color', 'var(--color-primary)');
-            }
         });
+
     </script>
 </body>
 </html>
